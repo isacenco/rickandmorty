@@ -40,11 +40,9 @@ struct CharactersListView: View {
                             .frame(width: 0, height: 0, alignment: .bottom)
                             .onAppear {
                                     //viewModel.scrollAtBottom = true
-                                
-                                viewModel.getNextCharactersIfExist()
-                            }
-                            .onDisappear {
-                                    //viewModel.scrollAtBottom = false
+                                if !viewModel.hideLoader {
+                                    viewModel.getNextCharactersIfExist()
+                                }
                             }
                     }
                     
@@ -52,6 +50,7 @@ struct CharactersListView: View {
                 .background(Color(hex: "#272B33"))
                 .foregroundColor(.white)
                 .navigationTitle("Rick and Morty DB")
+                .preferredColorScheme(.dark)
             }
             LoaderView()
                 .frame(width: 60, height: 60, alignment: .center)
