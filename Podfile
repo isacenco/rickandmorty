@@ -8,7 +8,7 @@ target 'Rick and Morty' do
   use_frameworks!
 
   # Pods for Rick and Morty
-  pod 'Kingfisher'
+  pod 'Kingfisher/SwiftUI'
   pod 'Alamofire'
 
   target 'Rick and MortyTests' do
