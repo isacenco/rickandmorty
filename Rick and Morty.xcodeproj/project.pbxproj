@@ -16,6 +16,19 @@
 		E1306CBD2A501CE10090CB87 /* Rick_and_MortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CBC2A501CE10090CB87 /* Rick_and_MortyTests.swift */; };
 		E1306CC72A501CE10090CB87 /* Rick_and_MortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CC62A501CE10090CB87 /* Rick_and_MortyUITests.swift */; };
 		E1306CC92A501CE10090CB87 /* Rick_and_MortyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CC82A501CE10090CB87 /* Rick_and_MortyUITestsLaunchTests.swift */; };
+		E1306CDD2A5042E30090CB87 /* CharactersWebRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CDC2A5042E30090CB87 /* CharactersWebRepo.swift */; };
+		E1306CE02A5044A30090CB87 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CDF2A5044A30090CB87 /* Models.swift */; };
+		E1306CE32A504BCB0090CB87 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CE22A504BCB0090CB87 /* Structs.swift */; };
+		E1306CE62A504E9E0090CB87 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CE52A504E9E0090CB87 /* CharactersViewModel.swift */; };
+		E1306CEA2A50537B0090CB87 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CE92A50537B0090CB87 /* CharactersListView.swift */; };
+		E1306CEC2A50622B0090CB87 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CEB2A50622B0090CB87 /* MockedData.swift */; };
+		E1306CEF2A507E480090CB87 /* CharacterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CEE2A507E480090CB87 /* CharacterCellView.swift */; };
+		E1306CF12A5080BD0090CB87 /* KFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CF02A5080BD0090CB87 /* KFImageView.swift */; };
+		E1306CF52A530C310090CB87 /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CF42A530C310090CB87 /* CharacterDetail.swift */; };
+		E1306CF72A530DFF0090CB87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CF62A530DFF0090CB87 /* Constants.swift */; };
+		E1306CF92A530E8C0090CB87 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CF82A530E8C0090CB87 /* DetailViewModel.swift */; };
+		E1306CFB2A5324710090CB87 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CFA2A5324710090CB87 /* Extensions.swift */; };
+		E1306CFD2A545A330090CB87 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306CFC2A545A330090CB87 /* LoaderView.swift */; };
 		E6A68EA67A43348D29C1CFCB /* Pods_Rick_and_MortyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3050E43A769F2D30FB36CF /* Pods_Rick_and_MortyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +69,19 @@
 		E1306CC22A501CE10090CB87 /* Rick and MortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick and MortyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1306CC62A501CE10090CB87 /* Rick_and_MortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_and_MortyUITests.swift; sourceTree = "<group>"; };
 		E1306CC82A501CE10090CB87 /* Rick_and_MortyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_and_MortyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1306CDC2A5042E30090CB87 /* CharactersWebRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersWebRepo.swift; sourceTree = "<group>"; };
+		E1306CDF2A5044A30090CB87 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E1306CE22A504BCB0090CB87 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		E1306CE52A504E9E0090CB87 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		E1306CE92A50537B0090CB87 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
+		E1306CEB2A50622B0090CB87 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
+		E1306CEE2A507E480090CB87 /* CharacterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellView.swift; sourceTree = "<group>"; };
+		E1306CF02A5080BD0090CB87 /* KFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFImageView.swift; sourceTree = "<group>"; };
+		E1306CF42A530C310090CB87 /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
+		E1306CF62A530DFF0090CB87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E1306CF82A530E8C0090CB87 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		E1306CFA2A5324710090CB87 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E1306CFC2A545A330090CB87 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +122,6 @@
 				B86B767C4E190609BE755E1A /* Pods-Rick and MortyTests.debug.xcconfig */,
 				322E0883FE625C34602D5414 /* Pods-Rick and MortyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,6 +160,11 @@
 		E1306CAA2A501CDF0090CB87 /* Rick and Morty */ = {
 			isa = PBXGroup;
 			children = (
+				E1306CE72A50525C0090CB87 /* UI */,
+				E1306CE42A504E810090CB87 /* ViewModels */,
+				E1306CE12A504BB80090CB87 /* Utilities */,
+				E1306CDE2A5044940090CB87 /* Models */,
+				E1306CDB2A5042C80090CB87 /* Repositories */,
 				E1306CAB2A501CDF0090CB87 /* Rick_and_MortyApp.swift */,
 				E1306CAD2A501CDF0090CB87 /* ContentView.swift */,
 				E1306CAF2A501CE10090CB87 /* Assets.xcassets */,
@@ -166,6 +196,70 @@
 				E1306CC82A501CE10090CB87 /* Rick_and_MortyUITestsLaunchTests.swift */,
 			);
 			path = "Rick and MortyUITests";
+			sourceTree = "<group>";
+		};
+		E1306CDB2A5042C80090CB87 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E1306CDC2A5042E30090CB87 /* CharactersWebRepo.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E1306CDE2A5044940090CB87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1306CDF2A5044A30090CB87 /* Models.swift */,
+				E1306CEB2A50622B0090CB87 /* MockedData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1306CE12A504BB80090CB87 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E1306CE22A504BCB0090CB87 /* Structs.swift */,
+				E1306CF62A530DFF0090CB87 /* Constants.swift */,
+				E1306CFA2A5324710090CB87 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E1306CE42A504E810090CB87 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1306CE52A504E9E0090CB87 /* CharactersViewModel.swift */,
+				E1306CF82A530E8C0090CB87 /* DetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E1306CE72A50525C0090CB87 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E1306CED2A507DFB0090CB87 /* Components */,
+				E1306CE82A50536B0090CB87 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E1306CE82A50536B0090CB87 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E1306CE92A50537B0090CB87 /* CharactersListView.swift */,
+				E1306CF42A530C310090CB87 /* CharacterDetail.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E1306CED2A507DFB0090CB87 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E1306CEE2A507E480090CB87 /* CharacterCellView.swift */,
+				E1306CF02A5080BD0090CB87 /* KFImageView.swift */,
+				E1306CFC2A545A330090CB87 /* LoaderView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,8 +501,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1306CF52A530C310090CB87 /* CharacterDetail.swift in Sources */,
+				E1306CEC2A50622B0090CB87 /* MockedData.swift in Sources */,
+				E1306CFD2A545A330090CB87 /* LoaderView.swift in Sources */,
 				E1306CAE2A501CDF0090CB87 /* ContentView.swift in Sources */,
+				E1306CEF2A507E480090CB87 /* CharacterCellView.swift in Sources */,
 				E1306CAC2A501CDF0090CB87 /* Rick_and_MortyApp.swift in Sources */,
+				E1306CEA2A50537B0090CB87 /* CharactersListView.swift in Sources */,
+				E1306CF12A5080BD0090CB87 /* KFImageView.swift in Sources */,
+				E1306CE32A504BCB0090CB87 /* Structs.swift in Sources */,
+				E1306CDD2A5042E30090CB87 /* CharactersWebRepo.swift in Sources */,
+				E1306CF92A530E8C0090CB87 /* DetailViewModel.swift in Sources */,
+				E1306CE62A504E9E0090CB87 /* CharactersViewModel.swift in Sources */,
+				E1306CE02A5044A30090CB87 /* Models.swift in Sources */,
+				E1306CF72A530DFF0090CB87 /* Constants.swift in Sources */,
+				E1306CFB2A5324710090CB87 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +680,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -602,6 +710,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
