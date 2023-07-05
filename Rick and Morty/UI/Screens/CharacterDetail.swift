@@ -1,15 +1,20 @@
-//
-//  CharacterDetail.swift
-//  Rick and Morty
-//
-//  Created by Ghenadie Isacenco on 3/7/23.
-//
+    //
+    //  CharacterDetail.swift
+    //  Rick and Morty
+    //
+    //  Created by Ghenadie Isacenco on 3/7/23.
+    //
 
 import SwiftUI
 
 struct CharacterDetail: View {
     
-    @ObservedObject var viewModel: DetailViewModel = DetailViewModel(repo: CharactersWebRepo(baseURL: Constants.BASE_URL), characterID: 0)
+    @Environment(\.presentationMode) var presentationMode
+    
+    @ObservedObject var viewModel: DetailViewModel = DetailViewModel(
+        repoCharacters: CharactersWebRepo(baseURL: Constants.BASE_URL_CHARACTERS),
+        repoEpisodes: EpisodesWebRepo(baseURL: Constants.BASE_URL_EPISODES),
+        characterID: 0)
     
     var body: some View {
         VStack {
@@ -21,26 +26,39 @@ struct CharacterDetail: View {
             .clipped()
             .cornerRadius(10.0)
             .padding(.horizontal)
+            Text(viewModel.character?.name ?? "")
+                .foregroundColor(Color(hex: Colors.orangePeelHex))
+                .fontWeight(.bold)
+                .font(.system(size: 24))
+                .padding(.horizontal)
             HStack {
-                Text(viewModel.character?.name ?? "")
-                    .foregroundColor(Color(hex: "ff9800"))
-                    .fontWeight(.bold)
-                    .font(.system(size: 20))
-                    .padding(.leading)
+                Text(viewModel.getSpeciensAndGenderText())
                 Spacer()
+                Color(hex: viewModel.getStatusColorHex())
+                    .frame(width: 8, height: 8, alignment: .center)
+                    .cornerRadius(4)
                 Text(viewModel.character?.status ?? "")
-                    .padding(.trailing)
-                    .foregroundColor(Color(hex: "fafafa"))
-            }
+                    .foregroundColor(Color(hex: Colors.alabasterHex))
+                
+            }.padding(.horizontal)
+            DetailDataView(title: "Origin", description: viewModel.character?.origin?.name)
+            DetailDataView(title: "Last known location", description: viewModel.character?.location?.name)
+            DetailDataView(title: "First seen in", description: viewModel.episode?.name)
+            
             
             Spacer()
-        }.onAppear {
+        }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+        }, label: { Image(systemName: "arrow.left") }))
+        .navigationBarTitle("", displayMode: .inline)
+        .onAppear {
             self.getCharacter()
         }
-        .background(Color(hex: "#272B33"))
-           // .padding()
-
-            
+        .foregroundColor(.white)
+        .background(Color(hex: Colors.sharkHex))
+        //.navigationBarHidden(true)
     }
     
     func getCharacter() {
