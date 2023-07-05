@@ -9,14 +9,14 @@ import SwiftUI
 
 struct CharactersListView: View {
     
-    @ObservedObject var viewModel: CharactersViewModel = CharactersViewModel(repo: CharactersWebRepo(baseURL: Constants.BASE_URL))
+    @ObservedObject var viewModel: CharactersViewModel = CharactersViewModel(repo: CharactersWebRepo(baseURL: Constants.BASE_URL_CHARACTERS))
     
     init(viewModel: CharactersViewModel) {
         self.viewModel = viewModel
     }
     
     init() {
-        self.viewModel = CharactersViewModel(repo: CharactersWebRepo(baseURL: Constants.BASE_URL))
+        self.viewModel = CharactersViewModel(repo: CharactersWebRepo(baseURL: Constants.BASE_URL_CHARACTERS))
     }
     
     var body: some View {
@@ -28,7 +28,10 @@ struct CharactersListView: View {
                         
                         ForEach(viewModel.characters, id: \.id) { character in
                             HStack {
-                                NavigationLink(destination: CharacterDetail(viewModel: DetailViewModel(repo: CharactersWebRepo(baseURL: Constants.BASE_URL), characterID: character.id ?? 0))) {
+                                NavigationLink(destination: CharacterDetail(viewModel: DetailViewModel(
+                                    repoCharacters: CharactersWebRepo(baseURL: Constants.BASE_URL_CHARACTERS),
+                                    repoEpisodes: EpisodesWebRepo(baseURL: Constants.BASE_URL_EPISODES),
+                                    characterID: character.id ?? 0))) {
                                     CharacterCellView(character: character)
                                 }
                                 
@@ -40,7 +43,7 @@ struct CharactersListView: View {
                             .frame(width: 0, height: 0, alignment: .bottom)
                             .onAppear {
                                     //viewModel.scrollAtBottom = true
-                                if !viewModel.hideLoader {
+                                if viewModel.hideLoader {
                                     viewModel.getNextCharactersIfExist()
                                 }
                             }
