@@ -10,7 +10,7 @@ import Combine
 import Alamofire
 
 protocol CharactersWebRepoProtocol {
-    func loadCharacters(withPage page: Int) -> AnyPublisher<DataResponse<CharactersModel, NetworkError>, Never>
+    func loadCharacters(withPage page: Int, searchText: String?) -> AnyPublisher<DataResponse<CharactersModel, NetworkError>, Never>
     func loadCharacter(withID id: Int) -> AnyPublisher<DataResponse<CharacterModel, NetworkError>, Never>
 }
 
@@ -22,8 +22,14 @@ class CharactersWebRepo: CharactersWebRepoProtocol {
         self.baseURL = baseURL
     }
     
-    func loadCharacters(withPage page: Int = 1) -> AnyPublisher<DataResponse<CharactersModel, NetworkError>, Never> {
-        return AF.request(baseURL, parameters: ["page": page])
+    func loadCharacters(withPage page: Int, searchText: String?) -> AnyPublisher<DataResponse<CharactersModel, NetworkError>, Never> {
+        var params: [String: Any] = ["page": page]
+        
+        if let name = searchText, !name.isEmpty {
+            params["name"] = name
+        }
+        
+        return AF.request(baseURL, parameters: params)
             .validate()
             .publishDecodable(type: CharactersModel.self)
             .map { response in

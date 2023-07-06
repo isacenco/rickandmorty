@@ -17,14 +17,3 @@ struct LoaderView: View {
             .progressViewStyle(CircularProgressViewStyle(tint: tintColor))
     }
 }
-
-extension View {
-    @ViewBuilder func hidden(_ shouldHide: Bool) -> some View {
-        switch shouldHide {
-        case true:
-            self.hidden()
-        case false:
-            self
-        }
-    }
-}

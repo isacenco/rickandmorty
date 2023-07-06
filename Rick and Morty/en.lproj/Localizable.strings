@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Rick and Morty
+
+  Created by Ghenadie Isacenco on 6/7/23.
+  
+*/
+
+"app_name" = "Rick and Morty DB";
+"load_more" = "Load More..";
+"search_prompt" = "Name";
+"label_origin" = "Origin";
+"label_last_known_location" = "Last known location";
+"label_first_seen_in" = "First seen in";
+"text_unknown" = "Unknown";
+"label_error" = "Error Alert";
+"label_accept" = "Accept";

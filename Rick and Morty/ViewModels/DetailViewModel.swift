@@ -13,6 +13,7 @@ class DetailViewModel: ObservableObject {
     @Published var character: CharacterModel?
     @Published var characterID: Int
     @Published var episode: EpisodeModel?
+    @Published var errorMessage: String? = nil
 
     private var cancellableSet: Set<AnyCancellable> = []
     var repoCharacters: CharactersWebRepoProtocol
@@ -33,13 +34,13 @@ class DetailViewModel: ObservableObject {
     
     func getCharacter() {
         repoCharacters.loadCharacter(withID: characterID)
-            .sink { (response) in
+            .sink { [weak self] (response) in
                 if response.error != nil {
-                        // TODO: show error alert?
+                    self?.errorMessage = response.error?.backendError?.error
                 } else {
                     if let results = response.value {
-                        self.character = results
-                        self.getEpisode()
+                        self?.character = results
+                        self?.getEpisode()
                     } else {
                         
                     }
@@ -52,12 +53,12 @@ class DetailViewModel: ObservableObject {
         guard let episodeNumber: Int = Int(String(episode)) else { return }
         
         repoEpisodes.loadEpisode(withID: episodeNumber)
-            .sink { (response) in
+            .sink { [weak self] (response) in
                 if response.error != nil {
-                        // TODO: show error alert?
+                    self?.errorMessage = response.error?.backendError?.error
                 } else {
                     if let results = response.value {
-                        self.episode = results
+                        self?.episode = results
                     } else {
                         
                     }

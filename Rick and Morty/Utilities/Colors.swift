@@ -15,4 +15,6 @@ struct Colors {
     static let sharkHex = "#272B33"
     static let grayHex = "#808080"
     static let silverChaliceHex = "#9E9E9E"
+    static let tunaHex = "#3C3E44"
+    static let steelGrayHex = "#222233"
 }

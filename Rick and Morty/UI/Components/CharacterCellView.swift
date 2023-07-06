@@ -28,13 +28,13 @@ struct CharacterCellView: View {
                 //.padding()
             Spacer()
         }
-        .background(Color(hex: "3c3e44"))
+        .background(Color(hex: Colors.tunaHex))
         //.padding()
         .frame(maxWidth: .infinity, maxHeight: 60, alignment: .leading)
         .cornerRadius(8)
         .overlay(
             RoundedRectangle(cornerRadius: 8)
-                .stroke(Color(hex: "333344"), lineWidth: 1)
+                .stroke(Color(hex: Colors.steelGrayHex), lineWidth: 1)
         )
     }
 }

@@ -16,7 +16,7 @@ struct DetailDataView: View {
         VStack(alignment: .leading) {
             Text(title ?? "-").foregroundColor(Color(hex: Colors.silverChaliceHex))
             Spacer().frame(maxHeight: 5)
-            Text(description ?? "unknown")
+            Text(description ?? "text_unknown")
         }.padding(.horizontal).padding(.top)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
