@@ -35,6 +35,10 @@
 		E1306D052A55CB080090CB87 /* EpisodeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306D042A55CB080090CB87 /* EpisodeModels.swift */; };
 		E1306D082A5715CF0090CB87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1306D0A2A5715CF0090CB87 /* Localizable.strings */; };
 		E1306D0C2A571B7D0090CB87 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306D0B2A571B7D0090CB87 /* ErrorView.swift */; };
+		E1306D0F2A583A5A0090CB87 /* CharactersWebRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306D0E2A583A5A0090CB87 /* CharactersWebRepoTests.swift */; };
+		E1306D112A5848110090CB87 /* EpisodesWebRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306D102A5848110090CB87 /* EpisodesWebRepoTests.swift */; };
+		E1306D142A584D1C0090CB87 /* CharactersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306D132A584D1B0090CB87 /* CharactersViewModelTests.swift */; };
+		E1306D162A58571D0090CB87 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306D152A58571D0090CB87 /* DetailViewModelTests.swift */; };
 		E6A68EA67A43348D29C1CFCB /* Pods_Rick_and_MortyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3050E43A769F2D30FB36CF /* Pods_Rick_and_MortyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +98,10 @@
 		E1306D042A55CB080090CB87 /* EpisodeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModels.swift; sourceTree = "<group>"; };
 		E1306D092A5715CF0090CB87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E1306D0B2A571B7D0090CB87 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E1306D0E2A583A5A0090CB87 /* CharactersWebRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersWebRepoTests.swift; sourceTree = "<group>"; };
+		E1306D102A5848110090CB87 /* EpisodesWebRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesWebRepoTests.swift; sourceTree = "<group>"; };
+		E1306D132A584D1B0090CB87 /* CharactersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModelTests.swift; sourceTree = "<group>"; };
+		E1306D152A58571D0090CB87 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +205,8 @@
 		E1306CBB2A501CE10090CB87 /* Rick and MortyTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1306D122A584D020090CB87 /* ViewModels */,
+				E1306D0D2A583A240090CB87 /* Repositories */,
 				E1306CBC2A501CE10090CB87 /* Rick_and_MortyTests.swift */,
 			);
 			path = "Rick and MortyTests";
@@ -278,6 +288,24 @@
 				E1306D0B2A571B7D0090CB87 /* ErrorView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E1306D0D2A583A240090CB87 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E1306D0E2A583A5A0090CB87 /* CharactersWebRepoTests.swift */,
+				E1306D102A5848110090CB87 /* EpisodesWebRepoTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E1306D122A584D020090CB87 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1306D132A584D1B0090CB87 /* CharactersViewModelTests.swift */,
+				E1306D152A58571D0090CB87 /* DetailViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,6 +575,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1306D142A584D1C0090CB87 /* CharactersViewModelTests.swift in Sources */,
+				E1306D162A58571D0090CB87 /* DetailViewModelTests.swift in Sources */,
+				E1306D112A5848110090CB87 /* EpisodesWebRepoTests.swift in Sources */,
+				E1306D0F2A583A5A0090CB87 /* CharactersWebRepoTests.swift in Sources */,
 				E1306CBD2A501CE10090CB87 /* Rick_and_MortyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
